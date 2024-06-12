@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from dgl.nn.pytorch import GATConv
-
 class SemanticAttention(nn.Module):
     def __init__(self, in_size, hidden_size=128):
         super(SemanticAttention, self).__init__()

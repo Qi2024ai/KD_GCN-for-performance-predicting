@@ -9,7 +9,7 @@ data = pd.read_csv('medium C steel_ori.csv',encoding='gbk')
 
 # 假设前12列是特征，第13列是目标变量
 X = data.iloc[:, 1:11].values
-y = data.iloc[:, 11].values
+y = data.iloc[:, 13].values
 
 # 对输入进行归一化处理
 scaler = MinMaxScaler()
